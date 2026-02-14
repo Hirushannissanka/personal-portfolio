@@ -3,6 +3,7 @@ import { Box, Stack, Typography } from '@mui/material';
 import React, { useEffect, useState } from 'react'
 import Image from 'next/image';
 import profilePic from './asserts/profile-pic.jpg';
+import BackgroundIcons from './BackgroundIcons';
 
 const Introduction = () => {
     const [mounted, setMounted] = useState(false);
@@ -61,7 +62,7 @@ const Introduction = () => {
       display: 'flex',
       alignItems: 'center',
       justifyContent: 'center',
-      background: 'linear-gradient(135deg, #0F172A, #1E293B)',
+      background: 'linear-gradient(135deg, #0B0E17, #12151F)',
       color: 'white',
       position: 'relative',
       overflow: 'hidden',
@@ -69,6 +70,7 @@ const Introduction = () => {
       py: { xs: 6, md: 0 }
     }}
   >
+    <BackgroundIcons />
 
     {/* Main Content */}
     <Stack
